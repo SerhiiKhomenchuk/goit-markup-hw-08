@@ -1,0 +1,25 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+&__header {
+        margin-right: 93px;
+    }
+
+    &__base {
+        text-decoration: none;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        color: var(--color-hoover);
+    }
+
+    &__part {
+        color: var(--color-logo);
+    }
+}
+

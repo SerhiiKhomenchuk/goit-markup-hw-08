@@ -1,0 +1,51 @@
+/*Особливості-Feautures*/
+.features-title--visually-hidden {
+    width: 1px;
+    height: 1px;
+    margin: 1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.features-list {
+    display: flex;
+    gap: 30px;
+    
+    &__card {
+            display: flex;
+            flex-direction: column;
+        }
+    
+    &__title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            color: var(--color-title);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+    
+        }
+    
+    &__icon {
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--color-button-background);
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+    
+    &__description {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.72;
+            letter-spacing: 0.03em;
+        }
+}
+

@@ -1,0 +1,24 @@
+//utils
+@import "./utilsMob/mixinsMob";
+@import "./utilsMob/placeholdersMob";
+@import "./utilsMob/variablesMob";
+
+//base
+@import './baseMob/resetMob';
+@import './baseMob/bodyMob';
+@import './baseMob/containerMob';
+@import './baseMob/sectionMob';
+
+//components
+@import './componentsMob/pageHeaderMob';
+@import './componentsMob/logoMob';
+@import './componentsMob/heroMob';
+@import './componentsMob/featuresMob';
+@import './componentsMob/whatWeDoMob';
+@import './componentsMob/teamsMob';
+@import './componentsMob/socialListMob';
+@import './componentsMob/clientsMob';
+@import './componentsMob/pageFooterMob';
+@import './componentsMob/modalMob';
+@import './componentsMob/formOrderMob'
+
