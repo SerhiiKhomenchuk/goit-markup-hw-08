@@ -1039,6 +1039,10 @@ body {
   color: var(--color-hoover);
 }
 
+.mobile-menu.is-open {
+  display: block;
+}
+
 .mobile-adress {
   display: flex;
   flex-direction: column;

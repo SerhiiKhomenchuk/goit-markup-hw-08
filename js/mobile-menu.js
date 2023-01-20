@@ -1,6 +1,4 @@
-const rangeInput = document.querySelector('input[type="range"]')
-const output = document.querySelector('.js-selected-value');
-rangeInput.addEventListener('input', e => output.textContent = e.target.value)(() => {
+(() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
