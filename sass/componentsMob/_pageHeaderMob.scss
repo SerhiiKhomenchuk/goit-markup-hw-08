@@ -121,6 +121,7 @@
     border: none;
     background-color: transparent;
     transition: fill 250ms var(--cubic);
+    cursor: pointer;
 &:hover {
     fill: var(--color-hoover);
 }

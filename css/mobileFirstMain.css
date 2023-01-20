@@ -195,6 +195,7 @@ body {
   border: none;
   background-color: transparent;
   transition: fill 250ms var(--cubic);
+  cursor: pointer;
 }
 .mobile-open:hover {
   fill: var(--color-hoover);
