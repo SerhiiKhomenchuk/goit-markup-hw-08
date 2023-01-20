@@ -25,7 +25,7 @@
   <body>
     <!--Шапака-Header-->
     <header class="header">
-      <div class="header__block container ">
+      <div class="header__block container">
         <nav class="header-nav">
           <!--Логотип-шапка-->
           <h2 class="logo logo__header">
@@ -35,21 +35,29 @@
           </h2>
           <!--Навігація по сайту-->
           <ul class="list nav-list">
-            <li >
-              <a class="nav-list__item nav-list__item--current" href="./index.html">Студія</a>
+            <li>
+              <a
+                class="nav-list__item nav-list__item--current"
+                href="./index.html"
+                >Студія</a
+              >
             </li>
-            <li >
+            <li>
               <a class="nav-list__item" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li ><a class="nav-list__item" href="#">Контакти</a></li>
+            <li><a class="nav-list__item" href="#">Контакти</a></li>
           </ul>
         </nav>
-        
+
         <!--Контакти-шапка-->
 
-        <ul class="list header-adress ">
+        <ul class="list header-adress">
           <li>
-            <a class="header-adress__item" lang="en" href="mailto:info@devstudio.com">
+            <a
+              class="header-adress__item"
+              lang="en"
+              href="mailto:info@devstudio.com"
+            >
               <svg class="header-adress__icon" width="16" height="16">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -70,14 +78,21 @@
             >
           </li>
         </ul>
+        <!-- Кнопка мобільного меню -->
+        <button class="mobile-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"type="button">
+          <svg width="24" height="16">
+            <use href="./images/icons.svg#icon-menu-mobile"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main class="main">
-     
       <!--Герой-Hero-->
 
-      <section class="hero hero__img-overlay">
+      <section class="hero">
         <div class="hero__block container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero__button" type="button" data-modal-open>
@@ -90,11 +105,13 @@
 
       <section class="features section">
         <div class="container">
-          <h2 class="features-title features-title--visually-hidden">Особливості нашої роботи</h2>
+          <h2 class="features-title features-title--visually-hidden">
+            Особливості нашої роботи
+          </h2>
           <ul class="features-list list">
             <li class="features-list__card">
               <div class="features-list__icon">
-                <svg  width="70" height="70">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -129,7 +146,7 @@
             </li>
             <li class="features-list__card">
               <div class="features-list__icon">
-                <svg  width="70" height="70">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -179,7 +196,9 @@
                   width="370"
                   height="294"
                 />
-                <div class="what-we-do__lable"><h3>Дизайнерські рішення</h3></div>
+                <div class="what-we-do__lable">
+                  <h3>Дизайнерські рішення</h3>
+                </div>
               </div>
             </li>
           </ul>
@@ -189,25 +208,36 @@
       <!--Команда-Teams-->
 
       <section class="section teams">
-        <div class="container ">
+        <div class="container">
           <h2 class="teams__title">Наша команда</h2>
           <ul class="list teams__list">
             <li class="members-card">
               <picture>
-                <source srcset="./images/productDesignerMob450.webp" media="(max-width: 767px)">
-                <source srcset="./images/productDesignerMob354.webp" media="(max-width: 1199px)">
-                <source srcset="./images/productDesigner270.jpg" media="(min-width: 1200px)">
-                <img src="./images/productDesigner270.jpg" alt="productDesigner">
+                <source
+                  srcset="./images/productDesignerMob450.webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/productDesignerMob354.webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/productDesigner270.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/productDesigner270.jpg"
+                  alt="productDesigner"
+                />
               </picture>
-              
-                <!-- <img class="members-card__image"
+
+              <!-- <img class="members-card__image"
                 srcset="./images/productDesignerMob450.webp 480w, ./images/productDesignerMob354.webp 768w,  ./images/productDesigner270.jpg 1200w"
                 sizes="(min-width: 1200) 25vw"
                 src="./images/productDesigner270.jpg"
                 alt="бородатий хлопець в окулярах у червоній сорочці"
                  -->
-             
-              
+
               <h3 class="members-card__name">Ігор Дем'яненко</h3>
               <p class="members-card__position" lang="en">Product Designer</p>
               <ul class="list social-list social-list__geometry">
@@ -240,18 +270,28 @@
                   </a>
                 </li>
               </ul>
-             
             </li>
             <li class="members-card">
-
               <picture>
-                <source srcset="./images/frontendDeveloperMob450.webp" media="(max-width: 767px)">
-                <source srcset="./images/frontendDeveloperMob354.webp" media="(max-width: 1199px)">
-                <source srcset="./images/frontendDeveloper270.jpg" media="(min-width: 1200px)">
-                <img src="./images/frontendDeveloper270.jpg" alt="Ольга Рєпіна - блондинка з чарівною посмішкою в окулярах одягнута в білу блузу під темний піджак">
+                <source
+                  srcset="./images/frontendDeveloperMob450.webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/frontendDeveloperMob354.webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/frontendDeveloper270.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/frontendDeveloper270.jpg"
+                  alt="Ольга Рєпіна - блондинка з чарівною посмішкою в окулярах одягнута в білу блузу під темний піджак"
+                />
               </picture>
-              
-                <!-- <img
+
+              <!-- <img
                 src="./images/Frontend-Developer.webp"
                 alt="блондинка з чарівною посмішкою в окулярах одягнута в білу блузу під темний піджак"
                 width="270"
@@ -289,16 +329,27 @@
                   </a>
                 </li>
               </ul>
-              
             </li>
             <li class="members-card">
               <picture>
-                <source srcset="./images/marketingMob450.webp" media="(max-width: 767px)">
-                <source srcset="./images/marketingMob354.webp" media="(max-width: 1199px)">
-                <source srcset="./images/marketing270.jpg" media="(min-width: 1200px)">
-                <img src="./images/marketing270.jpg" alt="Микола Тарасов - хлопець у білій сорочці">
+                <source
+                  srcset="./images/marketingMob450.webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/marketingMob354.webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/marketing270.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/marketing270.jpg"
+                  alt="Микола Тарасов - хлопець у білій сорочці"
+                />
               </picture>
-                <!-- <img
+              <!-- <img
                 src="./images/Marketing.webp"
                 alt="хлопець у білій сорочці"
                 width="270"
@@ -336,17 +387,28 @@
                   </a>
                 </li>
               </ul>
-              
             </li>
             <li class="members-card">
               <picture>
-                <source srcset="./images/uiDesignerMob450.webp" media="(max-width: 767px)">
-                <source srcset="./images/uiDesignerMob354.webp" media="(max-width: 1199px)">
-                <source srcset="./images/uiDesigner270.jpg" media="(min-width: 1200px)">
-                <img src="./images/uiDesigner270.jpg" alt="Михайло Єрмаков - хлопець з борідкою в окулярах та в чорній футболці">
+                <source
+                  srcset="./images/uiDesignerMob450.webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/uiDesignerMob354.webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/uiDesigner270.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/uiDesigner270.jpg"
+                  alt="Михайло Єрмаков - хлопець з борідкою в окулярах та в чорній футболці"
+                />
               </picture>
-              
-                <!-- <img
+
+              <!-- <img
                 src="./images/UI-Designer.webp"
                 alt="хлопець з борідкою в окулярах та в чорній футболці"
                 width="270"
@@ -384,12 +446,11 @@
                   </a>
                 </li>
               </ul>
-              
             </li>
           </ul>
         </div>
       </section>
-      
+
       <!--Постійні клієнти-Clients-->
 
       <section class="clients section">
@@ -447,7 +508,8 @@
 
     <footer class="footer section">
       <div class="container footer__block">
-        <div class="footer__adress">
+        <div class="footer_box">
+          <div class="footer__adress">
           <h2 class="logo footer__logo">
             <a class="logo__base" href="./index.html" lang="en"
               >Web<span class="footer__logo-invert">Studio</span></a
@@ -465,7 +527,9 @@
                 </a>
               </li>
               <li>
-                <a class="contacts-list__adress" href="mailto:info@devstudio.com"
+                <a
+                  class="contacts-list__adress"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
@@ -481,28 +545,36 @@
           <p class="footer-social__title">Приєднуйтесь</p>
           <ul class="list social-list">
             <li>
-              <a class="social-list__link footer__social-list" href="https://www.instagram.com"
+              <a
+                class="social-list__link footer__social-list"
+                href="https://www.instagram.com"
                 ><svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="social-list__link footer__social-list" href="https://twitter.com"
+              <a
+                class="social-list__link footer__social-list"
+                href="https://twitter.com"
                 ><svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="social-list__link footer__social-list" href="https://www.facebook.com"
+              <a
+                class="social-list__link footer__social-list"
+                href="https://www.facebook.com"
                 ><svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="social-list__link footer__social-list" href="https://www.linkedin.com"
+              <a
+                class="social-list__link footer__social-list"
+                href="https://www.linkedin.com"
                 ><svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -510,24 +582,105 @@
             </li>
           </ul>
         </div>
+
+        </div>
         <form class="subscribe" name="order">
           <p class="subscribe__title">Підпишіться на розсилку</p>
-            <div class="subscribe__field">
-              <input
+          <div class="subscribe__field">
+            <input
               class="subscribe__input"
               type="email"
               name="email"
               placeholder="E-mail"
-              />
-            <button class="subscribe__button" type="submit">Відправити
+            />
+            <button class="subscribe__button" type="submit">
+              Підписатися
               <svg class="subscribe-icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
             </button>
-            </div>
+          </div>
         </form>
       </div>
     </footer>
+
+    <!-- Мобільне меню - Menu mobile -->
+
+    <!-- Кнопка закриття  -->
+    <div class="mobile-menu js-mobile-menu">
+      <button class="mobile-menu__button-close">
+        <svg class="mobile-menu__close-icon" width="18.67" height="18.67">
+          <use href="./images/icons.svg#icon-Close"></use>
+        </svg>
+      </button>
+      <!-- Мобільна навігація -->
+      <ul class="list mobile-menu__list">
+        <li class="">
+          <a
+            class="mobile-menu__item mobile-menu__item--current"
+            href="./index.html"
+            >Студія</a
+          >
+        </li>
+        <li>
+          <a class="mobile-menu__item" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li><a class="mobile-menu__item" href="#">Контакти</a></li>
+      </ul>
+      <!-- Контакти мобільного меню -->
+      <ul class="list mobile-adress">
+        <li>
+          <a class="mobile-adress__tel" href="tel:+380961111111">
+            +38 096 111 11 11</a
+          >
+        </li>
+        <li>
+          <a
+            class="mobile-adress__mail"
+            lang="en"
+            href="mailto:info@devstudio.com"
+          >
+            info@devstudio.com</a
+          >
+        </li>
+        
+      </ul>
+
+      <!-- Соціальні мережі мобільного меню - Mobile-social -->
+
+      <ul class="list mobile-social">
+        <li>
+          <a
+            class="mobile-social__link "
+            href="https://www.instagram.com"
+            >Instagram<span class="mobile-social__pipe">|</span>
+          </a>
+          
+        </li>
+        <li>
+          <a
+            class="mobile-social__link"
+            href="https://twitter.com"
+            >Twitter<span class="mobile-social__pipe">|</span>
+          
+        </li>
+        <li>
+          <a
+            class="mobile-social__link"
+            href="https://www.facebook.com"
+            >Facebook<span class="mobile-social__pipe">|</span>
+          </a>
+          
+        </li>
+        <li>
+          <a
+            class="mobile-social__link"
+            href="https://www.linkedin.com"
+            >LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
     <!--Modal window - Модальне вікно-->
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
@@ -540,7 +693,9 @@
         <!--Форма замовлення-->
 
         <form class="form-order" name="order">
-          <p class="form-order__title">Залиште свої дані, ми вам передзвонимо</p>
+          <p class="form-order__title">
+            Залиште свої дані, ми вам передзвонимо
+          </p>
           <div class="form-order__field">
             <label class="form-order__label" for="name">Ім'я</label>
             <input
@@ -548,7 +703,6 @@
               type="name"
               name="name"
               id="name"
-              
             />
             <svg class="form-order__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person-form"></use>
@@ -586,26 +740,25 @@
             ></textarea>
           </div>
 
-          
-            <label class="policy" for="policy">
-              <input
-                class="policy__checkbox policy__checkbox--visually-hidden"
-                type="checkbox"
-                name="policy"
-                id="policy"
-              />
-              <svg class="policy__icon" width="16" height="15">
-                <use href="images/icons.svg#icon-check"></use>
-              </svg>
-              Погоджуюся з розсилкою та приймаю
-              <a class="policy__link" href="">Умови договору</a>
-              
-            </label>
-          
-          <button  class="form-order__button" type="submit">Відправити</button>
+          <label class="policy" for="policy">
+            <input
+              class="policy__checkbox policy__checkbox--visually-hidden"
+              type="checkbox"
+              name="policy"
+              id="policy"
+            />
+            <svg class="policy__icon" width="16" height="15">
+              <use href="images/icons.svg#icon-check"></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю
+            <a class="policy__link" href="">Умови договору</a>
+          </label>
+
+          <button class="form-order__button" type="submit">Відправити</button>
         </form>
       </div>
     </div>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
