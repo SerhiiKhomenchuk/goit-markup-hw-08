@@ -3,7 +3,10 @@
 .form-order {
     display: flex;
     flex-direction: column;
-     
+    @media screen and (min-width: 1200) {
+        width: 442px;
+        
+    }
 
     &__title {
         font-weight: 700;

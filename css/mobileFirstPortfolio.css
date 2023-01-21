@@ -92,8 +92,9 @@ body {
   }
 }
 
+/** @format */
 .header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 .header__block {
   display: flex;
@@ -106,9 +107,11 @@ body {
     height: 80px;
   }
 }
-.header-nav {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .nav-list {
