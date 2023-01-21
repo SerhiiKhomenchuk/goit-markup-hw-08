@@ -372,6 +372,11 @@ body {
   display: none;
   padding-top: 0px;
 }
+@media screen and (min-width: 1200px) {
+  .what-we-do {
+    display: block;
+  }
+}
 .what-we-do__title {
   font-weight: 700;
   font-size: 36px;
