@@ -79,7 +79,7 @@
           </li>
         </ul>
         <!-- Кнопка мобільного меню -->
-        <button class="mobile-open js-open-menu" type="button">
+        <button class="mobile-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
           <svg width="24" height="16">
             <use href="./images/icons.svg#icon-menu-mobile"></use>
           </svg>
@@ -212,15 +212,15 @@
             <li class="members-card">
               <picture>
                 <source
-                  srcset="./images/productDesignerMob450.webp"
+                  srcset="./images/productDesigner450@1X.webp 1x, ./images/productDesigner450@2X.webp 2x "
                   media="(max-width: 767px)"
                 />
                 <source
-                  srcset="./images/productDesignerMob354.webp"
+                  srcset="./images/productDesigner354@1X.webp 1x, ./images/productDesigner354@2X.webp 2x"
                   media="(max-width: 1199px)"
                 />
                 <source
-                  srcset="./images/productDesigner270.jpg"
+                  srcset="./images/productDesigner270@1X.webp 1x, ./images/productDesigner270@2X.webp 2x"
                   media="(min-width: 1200px)"
                 />
                 <img
@@ -272,15 +272,15 @@
             <li class="members-card">
               <picture>
                 <source
-                  srcset="./images/frontendDeveloperMob450.webp"
+                  srcset="./images/frontendDeveloper450@1X.webp 1x, ./images/frontendDeveloper450@2X.webp 2x"
                   media="(max-width: 767px)"
                 />
                 <source
-                  srcset="./images/frontendDeveloperMob354.webp"
+                  srcset="./images/frontendDeveloper354@1X.webp 1x, ./images/frontendDeveloper354@2X.webp 2x"
                   media="(max-width: 1199px)"
                 />
                 <source
-                  srcset="./images/frontendDeveloper270.jpg"
+                  srcset="./images/frontendDeveloper270@1X.webp 1x, ./images/frontendDeveloper270@2X.webp 2x"
                   media="(min-width: 1200px)"
                 />
                 <img
@@ -331,15 +331,15 @@
             <li class="members-card">
               <picture>
                 <source
-                  srcset="./images/marketingMob450.webp"
+                  srcset="./images/marketing450@1X.webp 1x, ./images/marketing450@2X.webp 2x"
                   media="(max-width: 767px)"
                 />
                 <source
-                  srcset="./images/marketingMob354.webp"
+                  srcset="./images/marketing354@1X.webp 1x, ./images/marketing354@2X.webp 2x"
                   media="(max-width: 1199px)"
                 />
                 <source
-                  srcset="./images/marketing270.jpg"
+                  srcset="./images/marketing270@1X.webp 1x, ./images/marketing270@2X.webp 2x"
                   media="(min-width: 1200px)"
                 />
                 <img
@@ -389,15 +389,15 @@
             <li class="members-card">
               <picture>
                 <source
-                  srcset="./images/uiDesignerMob450.webp"
+                  srcset="./images/uiDesigner450@1X.webp 1x, ./images/uiDesigner450@2X.webp 2x"
                   media="(max-width: 767px)"
                 />
                 <source
-                  srcset="./images/uiDesignerMob354.webp"
+                  srcset="./images/uiDesigner354@1X.webp 1x, ./images/uiDesigner354@2X.webp 2x"
                   media="(max-width: 1199px)"
                 />
                 <source
-                  srcset="./images/uiDesigner270.jpg"
+                  srcset="./images/uiDesigner270@1X.webp 1x, ./images/uiDesigner270@2X.webp 2x"
                   media="(min-width: 1200px)"
                 />
                 <img
@@ -605,36 +605,38 @@
     <!-- Мобільне меню - Menu mobile -->
 
     <!-- Кнопка закриття  -->
-    <div class="mobile-menu js-menu-container">
-      <button class="mobile-menu__button-close js-close-menu">
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__button-close js-close-menu"  type="button">
         <svg class="mobile-menu__close-icon" width="18.67" height="18.67">
           <use href="./images/icons.svg#icon-Close"></use>
         </svg>
       </button>
-      <!-- Мобільна навігація -->
-      <ul class="list mobile-menu__list">
-        <li>
+      <div class="menu-box">
+        <!-- Мобільна навігація -->
+      <ul class="list mobile-nav">
+        <li class="mobile-nav__item">
           <a
-            class="mobile-menu__item mobile-menu__item--current"
+            class="mobile-nav__link mobile-nav__link--current"
             href="./index.html"
             >Студія</a
           >
         </li>
-        <li>
-          <a class="mobile-menu__item" href="./portfolio.html">Портфоліо</a>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a>
         </li>
-        <li><a class="mobile-menu__item" href="#">Контакти</a></li>
+        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Контакти</a></li>
       </ul>
+      
       <!-- Контакти мобільного меню -->
-      <ul class="list mobile-adress">
-        <li>
-          <a class="mobile-adress__tel" href="tel:+380961111111">
+      <ul class="list mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__tel" href="tel:+380961111111">
             +38 096 111 11 11</a
           >
         </li>
-        <li>
+        <li class="mobile-contacts__item">
           <a
-            class="mobile-adress__mail"
+            class="mobile-contacts__mail"
             lang="en"
             href="mailto:info@devstudio.com"
           >
@@ -645,7 +647,6 @@
       </ul>
 
       <!-- Соціальні мережі мобільного меню - Mobile-social -->
-
       <ul class="list mobile-social">
         <li>
           <a
@@ -678,7 +679,9 @@
           </a>
         </li>
       </ul>
+      </div>     
     </div>
+    
     <!--Modal window - Модальне вікно-->
     <div data-modal class="backdrop is-hidden">
       <div class="modal">

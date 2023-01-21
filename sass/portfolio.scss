@@ -1,17 +1,16 @@
 //utils
-@import "./utilsMob/mixinsMob";
-@import "./utilsMob/placeholdersMob";
-@import "./utilsMob/variablesMob";
-
+@import "./utils/mixins";
+@import "./utils/placeholders";
+@import "./utils/variables";
 //base
-@import './baseMob/resetMob';
-@import './baseMob/bodyMob';
-@import './baseMob/containerMob';
-@import './baseMob/sectionMob';
+@import './base/reset';
+@import "./base/body";
+@import "./base/container";
+@import "./base/section";
 
 //components
-@import './componentsMob/pageHeaderMob';
-@import './componentsMob/logoMob';
+@import "./components/page-header";
+@import "./components/logo";
 @import "./components/portfolio-title";
 @import "./components/filters";
 @import "./components/projects";
